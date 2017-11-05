@@ -14,6 +14,11 @@ public class M
 	private static final int modulus = 360 * precision;
 	private static final float[] sin = new float[modulus];
 
+	public static double clip(double value, double min, double max)
+	{
+		return Math.min(max, Math.max(min, value));
+	}
+
 	/**
 	 * Get true or false based on random percent
 	 *
