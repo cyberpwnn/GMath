@@ -31,6 +31,11 @@ public class Average
 		return average;
 	}
 
+	public int size()
+	{
+		return values.length;
+	}
+
 	private void calculateAverage()
 	{
 		double d = 0;
